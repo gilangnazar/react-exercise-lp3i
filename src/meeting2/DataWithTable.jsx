@@ -1,5 +1,10 @@
-function DataWithTable({data}) {
-    
+function DataWithTable() {
+    const biodata = [
+        {nama: "Gilang Nazar", jurusan: "Manajemen Informatika"},
+        {nama: "Alpin", jurusan: "Hubungan Masyarakat"},
+        {nama: "Faridb", jurusan: "Bisnis Digital"}
+    ]
+
     return(
         <>
             <table className="table">
@@ -11,7 +16,7 @@ function DataWithTable({data}) {
                     </tr>
                 </thead>
                 <tbody>
-                    {data.map((item, index) => {
+                    {biodata.map((item, index) => {
                         return(
                             <tr key={index}>
                                 <td>{index + 1}</td>

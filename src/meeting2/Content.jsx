@@ -1,15 +1,21 @@
-function Content({data}) {
+function Content() {
+    const biodata = [
+        {nama: "Gilang Nazar", jurusan: "Manajemen Informatika"},
+        {nama: "Alpin", jurusan: "Hubungan Masyarakat"},
+        {nama: "Faridb", jurusan: "Bisnis Digital"}
+    ]
+
     const tampilan = {
     backgroundColor: "grey",
         padding: '10px',
         borderRadius: '10px',
-        color: 'black',
-        margin: '10px 0'
+        margin: '10px 0',
+        color: 'white'
     }
 
     return(
         <>
-        {data.map((item, index) => {
+        {biodata.map((item, index) => {
             return(
                 <div style={tampilan} key={index}>
                     Nama Lengkap : {item.nama} <br />
