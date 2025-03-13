@@ -3,7 +3,9 @@ import Header from './meeting2/Header'
 // import Content from './meeting2/Content'
 // import Dropdown from './meeting2/Dropdown';
 // import DataWithTable from './meeting2/DataWithTable';
-import Accordion from './meeting2/Accordion';
+import Accordion from './meeting2/Accordion'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 function App() {
 //   const biodata = [
